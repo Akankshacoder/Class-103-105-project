@@ -1,0 +1,51 @@
+ 
+<html>
+  <head>
+    <title>Face recognition app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+<h1>Face recognition</h1>
+<br>
+<h3>Model is trained on these following objects :-</h3>
+<br>
+<p> Mother , Father ,Me</p>
+<br>
+<h3>Webcam view :-</h3>
+<div id="camera"></div>
+<br>
+<h3>Snapshot view :-</h3>
+<div id="result"></div>
+<br>
+<button class="btn btn-success" onclick="capture()">Capture image</button>
+<br><br><br>
+<button class="btn btn-info" onclick="identify()"> Identify Image</button>
+<br>
+<h3>Object name : <span id="objname"></span></h3>
+<br>
+<h3>Accuracy :  <span id="objaccu"></span></h3>
+
+
+     
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 

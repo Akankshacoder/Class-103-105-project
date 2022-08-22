@@ -1,0 +1,9 @@
+body{
+    background-image: url("bg.jpg") ;
+    color : white
+}
+#camera{
+    border : 2px solid white ;
+    width: 350px;
+    height : 350px
+}
